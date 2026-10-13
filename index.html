@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Veloura - Your Everyday Beauty Destination</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand: #c86b82;
+            --color-brand-dark: #b25a70;
+        }
+    </style>
+
+    <script src="common.js" defer></script>
+    <script src="home.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-[Arial,sans-serif] text-[#222]">
+
+    <!-- HEADER -->
+    <header class="flex h-[90px] items-center justify-between border-b border-neutral-200 px-[7%]">
+
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="flex h-[45px] w-[45px] items-center justify-center border border-brand font-serif text-[32px] italic text-brand">V</div>
+            <span class="font-serif text-[28px] tracking-[3px]">VELOURA</span>
+        </a>
+
+        <nav>
+            <ul class="hidden gap-[35px] text-sm md:flex">
+                <li><a href="index.html" class="hover:text-brand">Home</a></li>
+                <li><a href="shop.html" class="hover:text-brand">Shop</a></li>
+                <li><a href="#" class="hover:text-brand">New Arrivals</a></li>
+                <li><a href="#" class="hover:text-brand">Best Sellers</a></li>
+                <li><a href="#" class="hover:text-brand">Sale</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center gap-[22px]">
+            <a href="login.html" class="rounded-[5px] border border-brand px-[25px] py-2.5 text-sm text-brand">Sign In</a>
+            <a href="#" class="text-sm hover:text-brand">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="grid min-h-[390px] grid-cols-1 items-center gap-10 px-[12%] py-[60px] md:grid-cols-2 md:gap-20">
+
+            <div>
+                <h1 class="mb-5 font-serif text-[52px] uppercase leading-[1.05]">Discover<br>Your Beauty</h1>
+
+                <p class="mb-[30px] max-w-[380px] leading-[1.6]">
+                    Find beauty products that fit your style and needs.
+                </p>
+
+                <a href="shop.html" class="inline-block rounded bg-brand px-[30px] py-[13px] text-white hover:bg-brand-dark">
+                    Shop Now
+                </a>
+            </div>
+
+            <aside>
+                <div class="h-[190px] w-full border border-neutral-200 bg-[#f4f4f4]">
+                    <!-- Gambar beauty nanti di sini -->
+                </div>
+            </aside>
+
+        </section>
+
+
+        <!-- CATEGORY -->
+        <section class="border-y border-neutral-200 px-[10%] py-[55px]">
+
+            <h2 class="mb-10 text-center font-serif text-[28px] uppercase">Shop by Category</h2>
+
+            <div class="grid grid-cols-2 gap-[50px] text-center md:grid-cols-4">
+
+                <article>
+                    <div class="mx-auto mb-[15px] h-[115px] w-[115px] rounded-full border border-neutral-200 bg-[#f3f3f3]"></div>
+                    <h3 class="font-serif">Skincare</h3>
+                </article>
+
+                <article>
+                    <div class="mx-auto mb-[15px] h-[115px] w-[115px] rounded-full border border-neutral-200 bg-[#f3f3f3]"></div>
+                    <h3 class="font-serif">Makeup</h3>
+                </article>
+
+                <article>
+                    <div class="mx-auto mb-[15px] h-[115px] w-[115px] rounded-full border border-neutral-200 bg-[#f3f3f3]"></div>
+                    <h3 class="font-serif">Haircare</h3>
+                </article>
+
+                <article>
+                    <div class="mx-auto mb-[15px] h-[115px] w-[115px] rounded-full border border-neutral-200 bg-[#f3f3f3]"></div>
+                    <h3 class="font-serif">Bodycare</h3>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEW ARRIVALS -->
+        <section class="px-[10%] py-[55px]">
+
+            <div class="mb-[25px] flex items-center justify-between">
+                <h2 class="font-serif text-[28px] uppercase">New Arrivals</h2>
+                <a href="shop.html" class="text-sm text-brand">View More</a>
+            </div>
+
+            <div id="new-arrivals-grid" class="grid grid-cols-2 gap-[25px] md:grid-cols-4">
+
+            </div>
+
+        </section>
+
+
+        <!-- BEST SELLERS -->
+        <section class="px-[10%] py-[55px]">
+
+            <div class="mb-[25px] flex items-center justify-between">
+                <h2 class="font-serif text-[28px] uppercase">Best Sellers</h2>
+                <a href="shop.html" class="text-sm text-brand">View More</a>
+            </div>
+
+            <div id="best-sellers-grid" class="grid grid-cols-2 gap-[25px] md:grid-cols-4">
+
+            </div>
+
+        </section>
+
+
+        <!-- SALE -->
+        <section class="px-[10%] py-[55px]">
+
+            <div class="mb-[25px] flex items-center justify-between">
+                <h2 class="font-serif text-[28px] uppercase">Sale</h2>
+                <a href="shop.html" class="text-sm text-brand">View More</a>
+            </div>
+
+            <div id="sale-grid" class="grid grid-cols-2 gap-[25px] md:grid-cols-4">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="mt-[30px] grid grid-cols-1 gap-[50px] border-t border-neutral-200 bg-[#fafafa] px-[10%] pb-5 pt-[50px] md:grid-cols-[2fr_1fr_1fr_1fr]">
+
+        <section class="flex flex-col gap-2.5">
+            <div class="flex h-[45px] w-[45px] items-center justify-center border border-brand font-serif text-[32px] italic text-brand">V</div>
+            <h2 class="font-serif tracking-[3px]">VELOURA</h2>
+            <p class="text-[#777]">Your everyday beauty destination.</p>
+        </section>
+
+        <nav>
+            <h3 class="mb-[15px] font-serif">Explore</h3>
+            <ul class="text-sm">
+                <li class="mb-2.5"><a href="shop.html" class="hover:text-brand">Shop</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">New Arrivals</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">Best Sellers</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">Sale</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h3 class="mb-[15px] font-serif">Help</h3>
+            <ul class="text-sm">
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">FAQ</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">Shipping &amp; Delivery</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">Returns</a></li>
+                <li class="mb-2.5"><a href="#" class="hover:text-brand">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <address class="not-italic">
+            <h3 class="mb-[15px] font-serif">Contact</h3>
+            <p class="text-sm">hello@veloura.com</p>
+        </address>
+
+        <div class="copyright col-span-full border-t border-[#e5e5e5] pt-5 text-center text-[13px] text-[#777]">
+            © 2026 Veloura. All rights reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>

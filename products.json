@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": "glow-serum",
+      "name": "Glow Serum",
+      "category": "Skincare",
+      "subtitle": "Brightening & Hydrating",
+      "price": 129000,
+      "image": "images/Dior-eyeshadow.jpg",
+      "desc": "A lightweight serum that helps brighten the skin, hydrate deeply, and improve skin texture for a healthy, radiant glow.",
+      "benefits": ["Brightening", "Hydrating", "For all skin types"]
+    },
+    {
+      "id": "hydrating-cream",
+      "name": "Hydrating Cream",
+      "category": "Skincare",
+      "subtitle": "Deep Moisture Barrier",
+      "price": 99000,
+      "image": "images/hydrating-cream.png",
+      "desc": "A rich cream that locks in moisture and strengthens the skin barrier all day.",
+      "benefits": ["Deep moisture", "Barrier support", "Non-greasy"]
+    },
+    {
+      "id": "daily-sunscreen",
+      "name": "Daily Sunscreen",
+      "category": "Skincare",
+      "subtitle": "SPF 50+ PA++++",
+      "price": 89000,
+      "image": "images/daily-sunscreen.png",
+      "desc": "Lightweight sun protection that leaves no white cast and wears well under makeup.",
+      "benefits": ["SPF 50+ PA++++", "No white cast", "Daily use"]
+    },
+    {
+      "id": "gentle-cleanser",
+      "name": "Gentle Cleanser",
+      "category": "Skincare",
+      "subtitle": "For All Skin Types",
+      "price": 85000,
+      "image": "images/gentle-cleanser.png",
+      "desc": "A soft foaming cleanser that removes dirt and oil without drying the skin.",
+      "benefits": ["Gentle", "Removes oil", "For all skin types"]
+    },
+    {
+      "id": "rose-mist",
+      "name": "Rose Mist",
+      "category": "Skincare",
+      "subtitle": "Hydrating Face Mist",
+      "price": 65000,
+      "image": "images/rose-mist.png",
+      "desc": "A refreshing face mist that hydrates and sets makeup in seconds.",
+      "benefits": ["Instant hydration", "Refreshing", "Sets makeup"]
+    },
+    {
+      "id": "velvet-lip-cream",
+      "name": "Velvet Lip Cream",
+      "category": "Makeup",
+      "subtitle": "Long Lasting",
+      "price": 79000,
+      "image": "images/velvet-lip-cream.png",
+      "desc": "A velvety lip cream with rich color that stays comfortable for hours.",
+      "benefits": ["Long lasting", "Velvet finish", "Comfortable wear"]
+    },
+    {
+      "id": "soft-blush",
+      "name": "Soft Blush",
+      "category": "Makeup",
+      "subtitle": "Natural Finish",
+      "price": 89000,
+      "image": "images/soft-blush.png",
+      "desc": "A buildable blush that gives a natural, fresh flush of color.",
+      "benefits": ["Buildable", "Natural finish", "Blendable"]
+    },
+    {
+      "id": "moisturizing-shampoo",
+      "name": "Moisturizing Shampoo",
+      "category": "Haircare",
+      "subtitle": "For Dry Hair",
+      "price": 95000,
+      "image": "images/moisturizing-shampoo.png",
+      "desc": "A nourishing shampoo that cleanses gently and leaves dry hair soft and smooth.",
+      "benefits": ["Nourishing", "Soft & smooth", "For dry hair"]
+    },
+    {
+      "id": "silky-body-lotion",
+      "name": "Silky Body Lotion",
+      "category": "Bodycare",
+      "subtitle": "Soft & Non-Sticky",
+      "price": 75000,
+      "image": "images/silky-body-lotion.png",
+      "desc": "A fast-absorbing body lotion for soft, smooth skin all day.",
+      "benefits": ["Fast absorbing", "Non-sticky", "Long lasting softness"]
+    }
+  ],
+
+  "home": {
+    "newArrivals": [
+      { "id": "glow-serum", "name": "Glow Serum", "price": 129000, "image": "images/glow-serum.png" },
+      { "id": "hydrating-cream", "name": "Hydrating Cream", "price": 99000, "image": "images/hydrating-cream.png" },
+      { "id": "daily-sunscreen", "name": "Daily Sunscreen", "price": 89000, "image": "images/daily-sunscreen.png" },
+      { "name": "Soft Lip Cream", "price": 79000, "image": "" }
+    ],
+    "bestSellers": [
+      { "name": "Soft Matte Lip Cream", "price": 79000, "image": "" },
+      { "name": "Gentle Facial Cleanser", "price": 85000, "image": "" },
+      { "name": "Skin Barrier Moisturizer", "price": 115000, "image": "" },
+      { "name": "Natural Blush", "price": 95000, "image": "" }
+    ],
+    "sale": [
+      { "name": "Vitamin C Serum", "oldPrice": 150000, "price": 110000, "image": "" },
+      { "name": "Beauty Cushion", "oldPrice": 180000, "price": 135000, "image": "" },
+      { "name": "Daily Lip Tint", "oldPrice": 100000, "price": 75000, "image": "" }
+    ]
+  }
+}

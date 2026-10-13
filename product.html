@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Veloura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="common.js" defer></script>
+    <script src="product.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER: copy dari shop.html -->
+
+    <main class="product-page" id="product-page">
+
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt;
+            <a href="shop.html">Shop</a> &gt;
+            <span id="crumb-category"></span> &gt;
+            <span id="crumb-name" class="current"></span>
+        </nav>
+
+        <section class="product-detail">
+
+            <div class="detail-image" id="detail-image"></div>
+
+            <div class="detail-info">
+                <h1 id="detail-name"></h1>
+                <p class="detail-subtitle" id="detail-subtitle"></p>
+                <p class="detail-price" id="detail-price"></p>
+                <p class="detail-rating" id="detail-rating"></p>
+                <p class="detail-desc" id="detail-desc"></p>
+                <ul class="detail-benefits" id="detail-benefits"></ul>
+
+                <div class="detail-actions">
+                    <div>
+                        <span class="qty-label">Quantity</span>
+                        <div class="qty-box">
+                            <button type="button" id="qty-minus">−</button>
+                            <span id="qty-value">1</span>
+                            <button type="button" id="qty-plus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button type="button" id="add-cart" class="primary-btn">Add to Cart</button>
+                        <button type="button" id="wishlist-btn" class="outline-btn">♡ Add to Wishlist</button>
+                    </div>
+                </div>
+
+                <details>
+                    <summary>Product Details</summary>
+                    <p>Suitable for daily use. Tested for safety and comfort.</p>
+                </details>
+                <details>
+                    <summary>How to Use</summary>
+                    <p>Apply an appropriate amount to clean skin or hair as part of your daily routine.</p>
+                </details>
+                <details>
+                    <summary>Ingredients</summary>
+                    <p>Full ingredient list is available on the product packaging.</p>
+                </details>
+                <details>
+                    <summary>Shipping &amp; Returns</summary>
+                    <p>Orders are processed within 1-2 business days. Returns accepted within 7 days.</p>
+                </details>
+            </div>
+
+        </section>
+
+        <section class="related">
+            <h2>You May Also Like</h2>
+            <div id="related-grid" class="shop-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <section class="footer-brand">
+
+            <div class="logo-placeholder">V</div>
+
+            <h2>VELOURA</h2>
+
+            <p>
+                Your everyday beauty destination.
+            </p>
+
+        </section>
+
+
+        <nav class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+
+        </nav>
+
+
+        <nav class="footer-column">
+
+            <h3>Help</h3>
+
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+
+        <address class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                hello@veloura.com
+            </p>
+
+        </address>
+
+
+        <div class="copyright">
+            © 2026 Veloura. All rights reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
