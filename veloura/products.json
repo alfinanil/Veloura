@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": "moisturizing-shampoo",
+      "name": "Botanical Hydrating Shampoo",
+      "category": "Haircare",
+      "subtitle": "Argan Oil & Aloe Vera Formula",
+      "price": 95000,
+      "image": "images/haircare.jpg",
+      "desc": "A luxurious nourishing shampoo that deeply cleanses, strengthens roots, and restores natural hair shine without harsh sulfates.",
+      "benefits": ["Sulfate-Free", "Deep Moisture", "Shine Restoring", "For All Hair Types"],
+      "rating": 4.9,
+      "discount": 15,
+      "reviewCount": 142
+    },
+    {
+      "id": "hair-repair-serum",
+      "name": "Golden Silk Hair Repair Serum",
+      "category": "Haircare",
+      "subtitle": "Heat Protectant & Frizz Control",
+      "price": 125000,
+      "image": "images/haircare.jpg",
+      "desc": "Intensive leave-in treatment infused with pure keratin and golden argan oil to tame frizz and protect against heat damage.",
+      "benefits": ["Frizz Control", "Heat Protection", "Silky Touch", "Lightweight Formula"],
+      "rating": 4.8,
+      "discount": 10,
+      "reviewCount": 89
+    },
+    {
+      "id": "silky-body-lotion",
+      "name": "Velvet Rose Silky Body Lotion",
+      "category": "Bodycare",
+      "subtitle": "Soft & Non-Sticky Hydration",
+      "price": 85000,
+      "image": "images/bodycare.jpg",
+      "desc": "A fast-absorbing luxury body lotion with organic shea butter and delicate Bulgarian rose essence for 24-hour hydration.",
+      "benefits": ["24h Moisture", "Fast Absorbing", "Non-Sticky", "Organic Shea Butter"],
+      "rating": 4.9,
+      "discount": 20,
+      "reviewCount": 210
+    },
+    {
+      "id": "exfoliating-body-scrub",
+      "name": "Pink Himalayan Salt Body Scrub",
+      "category": "Bodycare",
+      "subtitle": "Smooth & Glow Exfoliator",
+      "price": 99000,
+      "image": "images/bodycare.jpg",
+      "desc": "Exfoliating body scrub enriched with sweet almond oil and coconut blossom to buff away dead skin cells and reveal radiant glow.",
+      "benefits": ["Gentle Exfoliation", "Radiant Glow", "Enriched with Oils", "Smells Divine"],
+      "rating": 4.7,
+      "discount": 0,
+      "reviewCount": 76
+    }
+  ]
+}

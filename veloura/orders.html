@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders - Veloura</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="orders.css">
+
+    <script src="api.js" defer></script>
+    <script src="common.js" defer></script>
+    <script src="orders.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="ticker-bar">
+        <div class="ticker-track">
+            <span>
+                ✨ FREE Express Shipping on orders over Rp 200.000 |
+                Use code <strong class="code-tag">VELOURA15</strong>
+                for 15% OFF
+            </span>
+
+            <span>
+                ✨ FREE Express Shipping on orders over Rp 200.000 |
+                Use code <strong class="code-tag">VELOURA15</strong>
+                for 15% OFF
+            </span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand-logo">
+            <img
+                src="images/logo-128.png"
+                alt="Logo Veloura"
+                class="logo-icon"
+                width="48"
+                height="48"
+            >
+
+            <span class="brand-name">VELOURA</span>
+        </a>
+
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+
+                <li>
+                    <a href="index.html#new-arrivals-section" class="nav-link">
+                        New Arrivals
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#best-sellers-section" class="nav-link">
+                        Best Sellers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#sale-section" class="nav-link">
+                        Sale
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="orders.html" class="orders-header-link">
+                📦 My Orders
+            </a>
+
+            <a href="index.html" class="back-home-btn">
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE -->
+    <main class="orders-page">
+
+        <section class="orders-hero">
+
+            <span class="orders-subtitle">
+                YOUR SHOPPING JOURNEY
+            </span>
+
+            <h1>
+                My Orders
+            </h1>
+
+            <p>
+                Track your beauty orders and see the latest delivery status.
+            </p>
+
+        </section>
+
+
+        <section class="orders-section">
+
+            <div class="orders-heading">
+
+                <div>
+                    <h2>Your Orders</h2>
+
+                    <p id="order-count">
+                        Loading orders...
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    id="refresh-orders"
+                    class="refresh-btn"
+                >
+                    ↻ Refresh Status
+                </button>
+
+            </div>
+
+
+            <div id="orders-container">
+
+                <div class="orders-loading">
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Loading your orders...
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="orders-footer">
+
+        <p>
+            © 2026 Veloura Beauty Inc. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

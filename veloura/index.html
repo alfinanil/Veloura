@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Veloura - Premium Everyday Beauty Destination</title>
+    <meta name="description" content="Discover luxury skincare, makeup, haircare, and bodycare products at Veloura. Organic, cruelty-free, and crafted for your everyday glow.">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="api.js" defer></script>
+    <script src="common.js" defer></script>
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT TICKER -->
+    <div class="ticker-bar">
+        <div class="ticker-track">
+            <span>
+                ✨ FREE Express Shipping on orders over Rp 200.000 | Use code
+                <strong class="code-tag">VELOURA15</strong> for 15% OFF
+            </span>
+
+            <span>
+                ✨ FREE Express Shipping on orders over Rp 200.000 | Use code
+                <strong class="code-tag">VELOURA15</strong> for 15% OFF
+            </span>
+        </div>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="brand-logo">
+            <img src="images/logo-128.png" alt="Logo Veloura" class="logo-icon" width="48" height="48">
+            <span class="brand-name">VELOURA</span>
+        </a>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="#new-arrivals-section" class="nav-link">New Arrivals</a></li>
+                <li><a href="#best-sellers-section" class="nav-link">Best Sellers</a></li>
+                <li><a href="#sale-section" class="nav-link">Sale</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- SEARCH -->
+            <button
+                type="button"
+                class="header-icon-btn"
+                onclick="toggleSearchModal(true)"
+                aria-label="Search products"
+                title="Search"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                </svg>
+            </button>
+
+            <!-- WISHLIST -->
+            <button
+                type="button"
+                class="header-icon-btn"
+                onclick="showToast('Wishlist items saved! Click product cards to view.')"
+                aria-label="View Wishlist"
+                title="Wishlist"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 8.7c0 5.5-8.8 10.2-8.8 10.2S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"></path>
+                </svg>
+
+                <span class="header-badge" id="wishlist-badge-count">0</span>
+            </button>
+
+            <!-- SHOPPING CART -->
+            <button
+                type="button"
+                class="header-icon-btn"
+                onclick="toggleCartDrawer(true)"
+                aria-label="Open Cart"
+                title="Shopping Cart"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 5h2l2 11h10l3-8H6"></path>
+                    <circle cx="9" cy="20" r="1.3"></circle>
+                    <circle cx="17" cy="20" r="1.3"></circle>
+                </svg>
+
+                <span class="header-badge" id="cart-badge-count">0</span>
+            </button>
+
+            <!-- ACCOUNT -->
+            <a
+                href="login.html"
+                class="account-icon-btn sign-in-btn"
+                aria-label="Account"
+                title="Account"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                </svg>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    ✦ CRUELTY-FREE & ORGANIC FORMULATION
+                </div>
+                
+                <h1 class="hero-title">
+                    Discover Your <span>Natural Radiance</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Elevate your daily routine with clean, clinically backed beauty rituals crafted to nourish your skin, hair, and spirit.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="shop.html" class="primary-cta">
+                        Shop Collection ➔
+                    </a>
+                    <a href="#category-section" class="secondary-cta">
+                        Explore Categories
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>15k+</h4>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Clean & Organic</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>4.9 ★</h4>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-img-container">
+                    <img src="images/hero.jpg" alt="Veloura Luxury Beauty Cosmetics">
+                </div>
+
+                <div class="floating-card">
+                    <div class="avatar">✨</div>
+                    <div class="info">
+                        <strong>Hydration Glow Serum</strong>
+                        <span>★ 4.9 (240+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section class="category-section" id="category-section">
+            <div class="section-header-center">
+                <span class="section-subtitle">CURATED RITUALS</span>
+                <h2 class="section-title">Shop by Category</h2>
+            </div>
+
+            <div class="category-grid">
+                <a href="shop.html?category=Skincare" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/skincare.jpg" alt="Skincare Category">
+                    </div>
+                    <h3>Skincare</h3>
+                    <span>Serum, Moisturizer & Cleanser</span>
+                </a>
+
+                <a href="shop.html?category=Makeup" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/makeup.jpg" alt="Makeup Category">
+                    </div>
+                    <h3>Makeup</h3>
+                    <span>Lipstick, Glow Blush & Powder</span>
+                </a>
+
+                <a href="shop.html?category=Haircare" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/haircare.jpg" alt="Haircare Category">
+                    </div>
+                    <h3>Haircare</h3>
+                    <span>Shampoo, Serum & Masks</span>
+                </a>
+
+                <a href="shop.html?category=Bodycare" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/bodycare.jpg" alt="Bodycare Category">
+                    </div>
+                    <h3>Bodycare</h3>
+                    <span>Silky Lotion & Salt Scrub</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- NEW ARRIVALS -->
+        <section class="product-section" id="new-arrivals-section">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-subtitle">FRESHLY FORMULATED</span>
+                    <h2 class="section-title">New Arrivals</h2>
+                </div>
+                <a href="shop.html" class="view-all-link">View All Products ➔</a>
+            </div>
+
+            <div id="new-arrivals-grid" class="product-grid">
+                <!-- Loaded dynamically via home.js -->
+            </div>
+        </section>
+
+        <!-- BRAND FEATURES -->
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">🌿</div>
+                    <div class="feature-info">
+                        <h4>100% Organic</h4>
+                        <p>Sourced from sustainable natural botanicals</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🐰</div>
+                    <div class="feature-info">
+                        <h4>Cruelty-Free</h4>
+                        <p>Never tested on animals, ethically certified</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🚀</div>
+                    <div class="feature-info">
+                        <h4>Fast Shipping</h4>
+                        <p>Same day dispatch & express delivery</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-info">
+                        <h4>7-Day Guarantee</h4>
+                        <p>Full refund if you are not completely satisfied</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEST SELLERS -->
+        <section class="product-section" id="best-sellers-section">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-subtitle">COMMUNITY FAVORITES</span>
+                    <h2 class="section-title">Best Sellers</h2>
+                </div>
+                <a href="shop.html" class="view-all-link">View All Products ➔</a>
+            </div>
+
+            <div id="best-sellers-grid" class="product-grid">
+                <!-- Loaded dynamically via home.js -->
+            </div>
+        </section>
+
+        <!-- SALE SECTION -->
+        <section class="product-section" id="sale-section" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-light);">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-subtitle">LIMITED TIME OFFERS</span>
+                    <h2 class="section-title">Exclusive Sale</h2>
+                </div>
+                <a href="shop.html" class="view-all-link">View All Deals ➔</a>
+            </div>
+
+            <div id="sale-grid" class="product-grid">
+                <!-- Loaded dynamically via home.js -->
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter-section">
+            <div class="newsletter-card">
+                <h2>Join the Veloura Circle</h2>
+                <p>Subscribe to receive exclusive beauty rituals, early access to new releases, and 15% OFF your first purchase.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing! Your 15% OFF code is VELOURA15'); this.reset();">
+                    <input type="email" placeholder="Enter your email address..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand-info">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo-128.png" alt="Logo Veloura" class="logo-icon" width="48" height="48">
+                </a>
+                <h3>VELOURA</h3>
+                <p>Your everyday luxury beauty destination. Clean formulations for natural skin, hair, and body confidence.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="shop.html">Shop Catalog</a></li>
+                    <li><a href="#new-arrivals-section">New Arrivals</a></li>
+                    <li><a href="#best-sellers-section">Best Sellers</a></li>
+                    <li><a href="#sale-section">On Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📧 hello@veloura.com</li>
+                    <li>📞 +62 812-3456-7890</li>
+                    <li>📍 Jakarta, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Veloura Beauty Inc. All rights reserved.</span>
+            <span>Designed with ✨ for everyday glow.</span>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OVER CART DRAWER -->
+    <div class="drawer-overlay" id="cart-drawer-overlay" onclick="if(event.target === this) toggleCartDrawer(false)">
+        <div class="cart-drawer">
+            <div class="drawer-header">
+                <h3>Your Cart</h3>
+                <button type="button" class="close-drawer-btn" onclick="toggleCartDrawer(false)">✕</button>
+            </div>
+
+            <div class="shipping-progress-container">
+                <div class="shipping-text" id="shipping-progress-text">Add Rp 200.000 more for FREE Shipping!</div>
+                <div class="shipping-progress-bar">
+                    <div class="shipping-progress-fill" id="shipping-progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="drawer-body">
+                <div class="cart-items-list" id="drawer-cart-list">
+                    <!-- Cart items rendered dynamically -->
+                </div>
+            </div>
+
+            <div class="drawer-footer">
+                <div class="promo-code-box">
+                    <input type="text" id="promo-input" placeholder="Promo code (e.g. VELOURA15)">
+                    <button type="button" onclick="applyPromoCode()">Apply</button>
+                </div>
+
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <strong id="drawer-subtotal">Rp0</strong>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Grand Total:</span>
+                    <strong id="drawer-grandtotal">Rp0</strong>
+                </div>
+
+                <button type="button" class="checkout-btn" onclick="checkoutCart()">
+                    Checkout Now ➔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal-backdrop" id="quickview-modal" onclick="if(event.target === this) closeQuickView()">
+        <div class="quickview-card">
+            <button type="button" class="close-modal-btn" onclick="closeQuickView()">✕</button>
+            <div class="qv-img-container">
+                <img id="qv-image" src="" alt="Product Quick View">
+            </div>
+            <div class="qv-details">
+                <span class="qv-category" id="qv-category">CATEGORY</span>
+                <h2 class="qv-title" id="qv-title">Product Name</h2>
+                <div class="qv-price" id="qv-price">Rp0</div>
+                <p class="qv-desc" id="qv-desc">Description text...</p>
+                <div class="qv-benefits" id="qv-benefits"></div>
+                
+                <button type="button" class="primary-cta" id="qv-add-cart-btn" style="margin-top:auto; width:100%;">
+                    🛒 Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH MODAL -->
+    <div class="search-modal" id="search-modal">
+        <div class="search-header-container">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <span style="font-size:14px; font-weight:700; color:var(--brand); letter-spacing:1px;">SEARCH CATALOG</span>
+                <button type="button" class="close-drawer-btn" onclick="toggleSearchModal(false)">✕</button>
+            </div>
+            
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input-field" placeholder="Search skincare, makeup, haircare..." oninput="handleLiveSearch(this.value)">
+            </div>
+        </div>
+
+        <div class="search-results-area">
+            <div class="product-grid" id="search-results-grid">
+                <!-- Search results rendered dynamically -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

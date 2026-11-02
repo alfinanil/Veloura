@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Veloura Admin</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/output.css">
+    <link rel="stylesheet" href="assets/dashboard.css">
+
+    <script>
+        window.VELOURA_ROOT = '../';
+    </script>
+
+    <script src="../api.js" defer></script>
+    <script src="assets/admin.js" defer></script>
+    <script src="assets/dashboard.js" defer></script>
+</head>
+
+<body class="admin-dashboard">
+
+    <div id="app-shell">
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar"></aside>
+
+        <!-- MOBILE BACKDROP -->
+        <div id="backdrop"></div>
+
+        <!-- MAIN -->
+        <div class="admin-main">
+
+            <!-- TOPBAR -->
+            <header id="topbar"></header>
+
+            <!-- DASHBOARD CONTENT -->
+            <main id="content">
+                <div class="dashboard-loading">
+                    Memuat dashboard...
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast-root"></div>
+
+</body>
+</html>

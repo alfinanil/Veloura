@@ -1,0 +1,14 @@
+{
+  "name": "veloura",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/main.css -o ./admin/assets/output.css --watch",
+    "build:css": "tailwindcss -i ./src/main.css -o ./admin/assets/output.css --minify",
+    "api": "php -S localhost:8000 -t backend/public backend/public/index.php"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
